@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        <link href="./assets/963b888/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/e1ef68af/solarized_light.css" rel="stylesheet">
+<link href="./assets/407eef69/style.css" rel="stylesheet">
+<script src="./assets/5b23384c/jquery.js"></script>
+<script src="./assets/963b888/js/bootstrap.js"></script>
+<script src="./assets/538e96fb/jssearch.js"></script>    <title>Creating Forms - Getting Data from Users - The Definitive Guide to Yii 2.0</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w1080" class="navbar-inverse navbar-fixed-top navbar"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w1080-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">The Definitive Guide to Yii 2.0</a></div><div id="w1080-collapse" class="collapse navbar-collapse"><ul id="w1081" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Extensions <span class="caret"></span></a><ul id="w1082" class="dropdown-menu"><li><a href="./ext-apidoc-index.html" tabindex="-1">apidoc</a></li>
+<li><a href="./ext-authclient-index.html" tabindex="-1">authclient</a></li>
+<li><a href="./ext-bootstrap-index.html" tabindex="-1">bootstrap</a></li>
+<li><a href="./ext-debug-index.html" tabindex="-1">debug</a></li>
+<li><a href="./ext-elasticsearch-index.html" tabindex="-1">elasticsearch</a></li>
+<li><a href="./ext-faker-index.html" tabindex="-1">faker</a></li>
+<li><a href="./ext-gii-index.html" tabindex="-1">gii</a></li>
+<li><a href="./ext-httpclient-index.html" tabindex="-1">httpclient</a></li>
+<li><a href="./ext-imagine-index.html" tabindex="-1">imagine</a></li>
+<li><a href="./ext-jui-index.html" tabindex="-1">jui</a></li>
+<li><a href="./ext-mongodb-index.html" tabindex="-1">mongodb</a></li>
+<li><a href="./ext-redis-index.html" tabindex="-1">redis</a></li>
+<li><a href="./ext-shell-index.html" tabindex="-1">shell</a></li>
+<li><a href="./ext-smarty-index.html" tabindex="-1">smarty</a></li>
+<li><a href="./ext-sphinx-index.html" tabindex="-1">sphinx</a></li>
+<li><a href="./ext-swiftmailer-index.html" tabindex="-1">swiftmailer</a></li>
+<li><a href="./ext-twig-index.html" tabindex="-1">twig</a></li></ul></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-1064" data-toggle="collapse" data-parent="#navigation">Introduction <b class="caret"></b></a><div id="navigation-1064" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">About Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">Upgrading from Version 1.1</a></div>
+<a class="list-group-item" href="#navigation-1065" data-toggle="collapse" data-parent="#navigation">Getting Started <b class="caret"></b></a><div id="navigation-1065" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-start-prerequisites.html">What do you need to know</a>
+<a class="list-group-item" href="./guide-start-installation.html">Installing Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">Running Applications</a>
+<a class="list-group-item" href="./guide-start-hello.html">Saying Hello</a>
+<a class="list-group-item" href="./guide-start-forms.html">Working with Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">Working with Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">Generating Code with Gii</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">Looking Ahead</a></div>
+<a class="list-group-item" href="#navigation-1066" data-toggle="collapse" data-parent="#navigation">Application Structure <b class="caret"></b></a><div id="navigation-1066" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">Application Structure Overview</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">Entry Scripts</a>
+<a class="list-group-item" href="./guide-structure-applications.html">Applications</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">Application Components</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">Controllers</a>
+<a class="list-group-item" href="./guide-structure-models.html">Models</a>
+<a class="list-group-item" href="./guide-structure-views.html">Views</a>
+<a class="list-group-item" href="./guide-structure-modules.html">Modules</a>
+<a class="list-group-item" href="./guide-structure-filters.html">Filters</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">Widgets</a>
+<a class="list-group-item" href="./guide-structure-assets.html">Assets</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">Extensions</a></div>
+<a class="list-group-item" href="#navigation-1067" data-toggle="collapse" data-parent="#navigation">Handling Requests <b class="caret"></b></a><div id="navigation-1067" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-runtime-overview.html">Request Handling Overview</a>
+<a class="list-group-item" href="./guide-runtime-bootstrapping.html">Bootstrapping</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">Routing and URL Creation</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">Requests</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">Responses</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions and Cookies</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">Handling Errors</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">Logging</a></div>
+<a class="list-group-item" href="#navigation-1068" data-toggle="collapse" data-parent="#navigation">Key Concepts <b class="caret"></b></a><div id="navigation-1068" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-concept-components.html">Components</a>
+<a class="list-group-item" href="./guide-concept-properties.html">Properties</a>
+<a class="list-group-item" href="./guide-concept-events.html">Events</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">Behaviors</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">Configurations</a>
+<a class="list-group-item" href="./guide-concept-aliases.html">Aliases</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">Class Autoloading</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">Service Locator</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">Dependency Injection Container</a></div>
+<a class="list-group-item" href="#navigation-1069" data-toggle="collapse" data-parent="#navigation">Working with Databases <b class="caret"></b></a><div id="navigation-1069" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-db-dao.html">Database Access Objects</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">Query Builder</a>
+<a class="list-group-item" href="./guide-db-active-record.html">Active Record</a>
+<a class="list-group-item" href="./guide-db-migrations.html">Migrations</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-sphinx/doc/guide">Sphinx</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-redis/doc/guide">Redis</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-mongodb/doc/guide">MongoDB</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-elasticsearch/doc/guide">ElasticSearch</a></div>
+<a class="list-group-item active" href="#navigation-1070" data-toggle="collapse" data-parent="#navigation">Getting Data from Users <b class="caret"></b></a><div id="navigation-1070" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./guide-input-forms.html">Creating Forms</a>
+<a class="list-group-item" href="./guide-input-validation.html">Validating Input</a>
+<a class="list-group-item" href="./guide-input-file-upload.html">Uploading Files</a>
+<a class="list-group-item" href="./guide-input-tabular-input.html">Collecting Tabular Input</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">Getting Data for Multiple Models</a>
+<a class="list-group-item" href="./guide-input-form-javascript.html">Extending ActiveForm on the Client Side</a></div>
+<a class="list-group-item" href="#navigation-1071" data-toggle="collapse" data-parent="#navigation">Displaying Data <b class="caret"></b></a><div id="navigation-1071" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">Data Formatting</a>
+<a class="list-group-item" href="./guide-output-pagination.html">Pagination</a>
+<a class="list-group-item" href="./guide-output-sorting.html">Sorting</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">Data Providers</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">Data Widgets</a>
+<a class="list-group-item" href="./guide-output-client-scripts.html">Working with Client Scripts</a>
+<a class="list-group-item" href="./guide-output-theming.html">Theming</a></div>
+<a class="list-group-item" href="#navigation-1072" data-toggle="collapse" data-parent="#navigation">Security <b class="caret"></b></a><div id="navigation-1072" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-security-overview.html">Security Overview</a>
+<a class="list-group-item" href="./guide-security-authentication.html">Authentication</a>
+<a class="list-group-item" href="./guide-security-authorization.html">Authorization</a>
+<a class="list-group-item" href="./guide-security-passwords.html">Working with Passwords</a>
+<a class="list-group-item" href="./guide-security-cryptography.html">Cryptography</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-authclient/doc/guide">Auth Clients</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">Best Practices</a></div>
+<a class="list-group-item" href="#navigation-1073" data-toggle="collapse" data-parent="#navigation">Caching <b class="caret"></b></a><div id="navigation-1073" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-caching-overview.html">Caching Overview</a>
+<a class="list-group-item" href="./guide-caching-data.html">Data Caching</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">Fragment Caching</a>
+<a class="list-group-item" href="./guide-caching-page.html">Page Caching</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP Caching</a></div>
+<a class="list-group-item" href="#navigation-1074" data-toggle="collapse" data-parent="#navigation">RESTful Web Services <b class="caret"></b></a><div id="navigation-1074" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-rest-quick-start.html">Quick Start</a>
+<a class="list-group-item" href="./guide-rest-resources.html">Resources</a>
+<a class="list-group-item" href="./guide-rest-controllers.html">Controllers</a>
+<a class="list-group-item" href="./guide-rest-routing.html">Routing</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">Response Formatting</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">Authentication</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">Rate Limiting</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">Versioning</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">Error Handling</a></div>
+<a class="list-group-item" href="#navigation-1075" data-toggle="collapse" data-parent="#navigation">Development Tools <b class="caret"></b></a><div id="navigation-1075" class="submenu panel-collapse collapse"><a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-debug/doc/guide">Debug Toolbar and Debugger</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-gii/doc/guide">Generating Code using Gii</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-apidoc">Generating API Documentation</a></div>
+<a class="list-group-item" href="#navigation-1076" data-toggle="collapse" data-parent="#navigation">Testing <b class="caret"></b></a><div id="navigation-1076" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-test-overview.html">Testing Overview</a>
+<a class="list-group-item" href="./guide-test-environment-setup.html">Testing environment setup</a>
+<a class="list-group-item" href="./guide-test-unit.html">Unit Tests</a>
+<a class="list-group-item" href="./guide-test-functional.html">Functional Tests</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">Acceptance Tests</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">Fixtures</a></div>
+<a class="list-group-item" href="#navigation-1077" data-toggle="collapse" data-parent="#navigation">Special Topics <b class="caret"></b></a><div id="navigation-1077" class="submenu panel-collapse collapse"><a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-app-advanced/doc/guide">Advanced Project Template</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">Building Application from Scratch</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">Console Commands</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">Core Validators</a>
+<a class="list-group-item" href="./guide-tutorial-docker.html">Docker</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">Internationalization</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">Mailing</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">Performance Tuning</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">Shared Hosting Environment</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">Template Engines</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">Working with Third-Party Code</a>
+<a class="list-group-item" href="./guide-tutorial-yii-as-micro-framework.html">Using Yii as a micro framework</a></div>
+<a class="list-group-item" href="#navigation-1078" data-toggle="collapse" data-parent="#navigation">Widgets <b class="caret"></b></a><div id="navigation-1078" class="submenu panel-collapse collapse"><a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-grid-gridview.html">GridView</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-listview.html">ListView</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-detailview.html">DetailView</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/guide-input-forms.html#activerecord-based-forms-activeform">ActiveForm</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-pjax.html">Pjax</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-menu.html">Menu</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-linkpager.html">LinkPager</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-linksorter.html">LinkSorter</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-bootstrap/doc/guide">Bootstrap Widgets</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-jui/doc/guide">jQuery UI Widgets</a></div>
+<a class="list-group-item" href="#navigation-1079" data-toggle="collapse" data-parent="#navigation">Helpers <b class="caret"></b></a><div id="navigation-1079" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">Helpers Overview</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Creating Forms <span id="creating-forms"></span><a href="#creating-forms" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#activerecord-based-forms-activeform">ActiveRecord based forms: ActiveForm</a></li>
+<li><a href="#creating-activeform-lists">Creating Lists</a></li>
+<li><a href="#working-with-pjax">Working with Pjax</a></li>
+<li><a href="#further-reading">Further Reading</a></li></ol></div>
+<h2>ActiveRecord based forms: ActiveForm <span id="activerecord-based-forms-activeform"></span><a href="#activerecord-based-forms-activeform" class="hashlink">&para;</a></h2><p>The primary way of using forms in Yii is through <a href="./yii-widgets-activeform.html">yii\widgets\ActiveForm</a>. This approach should be preferred when
+the form is based upon a model. Additionally, there are some useful methods in <a href="./yii-helpers-html.html">yii\helpers\Html</a> that are typically
+used for adding buttons and help text to any form.</p>
+<p>A form, that is displayed on the client-side, will in most cases have a corresponding <a href="guide-structure-models.html">model</a> which is used
+to validate its input on the server-side (Check the <a href="guide-input-validation.html">Validating Input</a> section for more details on validation).
+When creating model-based forms, the first step is to define the model itself. The model can be either based upon
+an <a href="guide-db-active-record.html">Active Record</a> class, representing some data from the database, or a generic Model class
+(extending from <a href="./yii-base-model.html">yii\base\Model</a>) to capture arbitrary input, for example a login form.</p>
+<blockquote class="tip"><p><strong>Tip: </strong>If the form fields are different from database columns or there are formatting and logic that is specific to that
+form only, prefer creating a separate model extended from <a href="./yii-base-model.html">yii\base\Model</a>.</p>
+</blockquote>
+<p>In the following example, we show how a generic model can be used for a login form:</p>
+<pre><code class="hljs php language-php"><span class="hljs-preprocessor">&lt;?php</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">LoginForm</span> <span class="hljs-keyword">extends</span> \<span class="hljs-title">yii</span>\<span class="hljs-title">base</span>\<span class="hljs-title">Model</span>
+</span>{
+    <span class="hljs-keyword">public</span> <span class="hljs-variable">$username</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-variable">$password</span>;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">rules</span><span class="hljs-params">()</span>
+    </span>{
+        <span class="hljs-keyword">return</span> [
+            <span class="hljs-comment">// define validation rules here</span>
+        ];
+    }
+}
+</code></pre>
+<p>In the controller, we will pass an instance of that model to the view, wherein the <a href="./yii-widgets-activeform.html">ActiveForm</a>
+widget is used to display the form:</p>
+<pre><code class="hljs php language-php"><span class="hljs-preprocessor">&lt;?php</span>
+<span class="hljs-keyword">use</span> <span class="hljs-title">yii</span>\<span class="hljs-title">helpers</span>\<span class="hljs-title">Html</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">yii</span>\<span class="hljs-title">widgets</span>\<span class="hljs-title">ActiveForm</span>;
+
+<span class="hljs-variable">$form</span> = ActiveForm::begin([
+    <span class="hljs-string">'id'</span> =&gt; <span class="hljs-string">'login-form'</span>,
+    <span class="hljs-string">'options'</span> =&gt; [<span class="hljs-string">'class'</span> =&gt; <span class="hljs-string">'form-horizontal'</span>],
+]) <span class="hljs-preprocessor">?&gt;</span>
+    <span class="hljs-preprocessor">&lt;?</span>= <span class="hljs-variable">$form</span>-&gt;field(<span class="hljs-variable">$model</span>, <span class="hljs-string">'username'</span>) <span class="hljs-preprocessor">?&gt;</span>
+    <span class="hljs-preprocessor">&lt;?</span>= <span class="hljs-variable">$form</span>-&gt;field(<span class="hljs-variable">$model</span>, <span class="hljs-string">'password'</span>)-&gt;passwordInput() <span class="hljs-preprocessor">?&gt;</span>
+
+    &lt;div <span class="hljs-class"><span class="hljs-keyword">class</span>="<span class="hljs-title">form</span>-<span class="hljs-title">group</span>"&gt;
+        &lt;<span class="hljs-title">div</span> <span class="hljs-title">class</span>="<span class="hljs-title">col</span>-<span class="hljs-title">lg</span>-<span class="hljs-title">offset</span>-1 <span class="hljs-title">col</span>-<span class="hljs-title">lg</span>-11"&gt;
+            &lt;?= <span class="hljs-title">Html</span>::<span class="hljs-title">submitButton</span>('<span class="hljs-title">Login</span>', ['<span class="hljs-title">class</span>' =&gt; '<span class="hljs-title">btn</span> <span class="hljs-title">btn</span>-<span class="hljs-title">primary</span>']) ?&gt;
+        &lt;/<span class="hljs-title">div</span>&gt;
+    &lt;/<span class="hljs-title">div</span>&gt;
+&lt;?<span class="hljs-title">php</span> <span class="hljs-title">ActiveForm</span>::<span class="hljs-title">end</span>() ?&gt;
+</span></code></pre>
+<h3>Wrapping with <code>begin()</code> and <code>end()</code>  <span id="wrapping-with-begin-and-end"></span><a href="#wrapping-with-begin-and-end" class="hashlink">&para;</a></h3><p>In the above code, <a href="./yii-base-widget.html#begin()-detail">ActiveForm::begin()</a> not only creates a form instance, but also marks the beginning of the form.
+All of the content placed between <a href="./yii-base-widget.html#begin()-detail">ActiveForm::begin()</a> and
+<a href="./yii-base-widget.html#end()-detail">ActiveForm::end()</a> will be wrapped within the HTML <code>&lt;form&gt;</code> tag.
+As with any widget, you can specify some options as to how the widget should be configured by passing an array to
+the <code>begin</code> method. In this case, an extra CSS class and identifying ID are passed to be used in the opening <code>&lt;form&gt;</code> tag.
+For all available options, please refer to the API documentation of <a href="./yii-widgets-activeform.html">yii\widgets\ActiveForm</a>.</p>
+<h3>ActiveField  <span id="activefield"></span><a href="#activefield" class="hashlink">&para;</a></h3><p>In order to create a form element in the form, along with the element's label, and any applicable JavaScript validation,
+the <a href="./yii-widgets-activeform.html#field()-detail">ActiveForm::field()</a> method is called, which returns an instance of <a href="./yii-widgets-activefield.html">yii\widgets\ActiveField</a>.
+When the result of this method is echoed directly, the result is a regular (text) input.
+To customize the output, you can chain additional methods of <a href="./yii-widgets-activefield.html">ActiveField</a> to this call:</p>
+<pre><code class="hljs php language-php"><span class="hljs-comment">// a password input</span>
+<span class="hljs-preprocessor">&lt;?</span>= <span class="hljs-variable">$form</span>-&gt;field(<span class="hljs-variable">$model</span>, <span class="hljs-string">'password'</span>)-&gt;passwordInput() <span class="hljs-preprocessor">?&gt;</span>
+<span class="hljs-comment">// adding a hint and a customized label</span>
+<span class="hljs-preprocessor">&lt;?</span>= <span class="hljs-variable">$form</span>-&gt;field(<span class="hljs-variable">$model</span>, <span class="hljs-string">'username'</span>)-&gt;textInput()-&gt;hint(<span class="hljs-string">'Please enter your name'</span>)-&gt;label(<span class="hljs-string">'Name'</span>) <span class="hljs-preprocessor">?&gt;</span>
+<span class="hljs-comment">// creating a HTML5 email input element</span>
+<span class="hljs-preprocessor">&lt;?</span>= <span class="hljs-variable">$form</span>-&gt;field(<span class="hljs-variable">$model</span>, <span class="hljs-string">'email'</span>)-&gt;input(<span class="hljs-string">'email'</span>) <span class="hljs-preprocessor">?&gt;</span>
+</code></pre>
+<p>This will create all the <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code> and other tags according to the <a href="./yii-widgets-activefield.html#$template-detail">template</a> defined by the form field.
+The name of the input field is determined automatically from the model's <a href="./yii-base-model.html#formName()-detail">form name</a> and the attribute name.
+For example, the name for the input field for the <code>username</code> attribute in the above example will be <code>LoginForm[username]</code>. This naming rule will result in an array
+of all attributes for the login form to be available in <code>$_POST['LoginForm']</code> on the server-side.</p>
+<blockquote class="tip"><p><strong>Tip: </strong>If you have only one model in a form and want to simplify the input names you may skip the array part by
+overriding the <a href="./yii-base-model.html#formName()-detail">formName()</a> method of the model to return an empty string.
+This can be useful for filter models used in the <a href="guide-output-data-widgets.html#grid-view">GridView</a> to create nicer URLs.</p>
+</blockquote>
+<p>Specifying the attribute of the model can be done in more sophisticated ways. For example when an attribute may
+take an array value when uploading multiple files or selecting multiple items you may specify it by appending <code>[]</code>
+to the attribute name:</p>
+<pre><code class="hljs php language-php"><span class="hljs-comment">// allow multiple files to be uploaded:</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$form</span>-&gt;field(<span class="hljs-variable">$model</span>, <span class="hljs-string">'uploadFile[]'</span>)-&gt;fileInput([<span class="hljs-string">'multiple'</span>=&gt;<span class="hljs-string">'multiple'</span>]);
+
+<span class="hljs-comment">// allow multiple items to be checked:</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$form</span>-&gt;field(<span class="hljs-variable">$model</span>, <span class="hljs-string">'items[]'</span>)-&gt;checkboxList([<span class="hljs-string">'a'</span> =&gt; <span class="hljs-string">'Item A'</span>, <span class="hljs-string">'b'</span> =&gt; <span class="hljs-string">'Item B'</span>, <span class="hljs-string">'c'</span> =&gt; <span class="hljs-string">'Item C'</span>]);
+</code></pre>
+<p>Be careful when naming form elements such as submit buttons. According to the <a href="https://api.jquery.com/submit/">jQuery documentation</a> there
+are some reserved names that can cause conflicts:</p>
+<blockquote><p>Forms and their child elements should not use input names or ids that conflict with properties of a form,
+such as <code>submit</code>, <code>length</code>, or <code>method</code>. Name conflicts can cause confusing failures.
+For a complete list of rules and to check your markup for these problems, see <a href="http://kangax.github.io/domlint/">DOMLint</a>.</p>
+</blockquote>
+<p>Additional HTML tags can be added to the form using plain HTML or using the methods from the <a href="./yii-helpers-html.html">Html</a>-helper
+class like it is done in the above example with <a href="./yii-helpers-basehtml.html#submitButton()-detail">Html::submitButton()</a>.</p>
+<blockquote class="tip"><p><strong>Tip: </strong>If you are using Twitter Bootstrap CSS in your application you may want to use
+<a href="./yii-bootstrap-activeform.html">yii\bootstrap\ActiveForm</a> instead of <a href="./yii-widgets-activeform.html">yii\widgets\ActiveForm</a>. The former extends from the latter and
+uses Bootstrap-specific styles when generating form input fields.</p>
+</blockquote>
+<blockquote class="tip"><p><strong>Tip: </strong>In order to style required fields with asterisks, you can use the following CSS:</p>
+<pre><code class="hljs css language-css"><span class="hljs-tag">div</span><span class="hljs-class">.required</span> <span class="hljs-tag">label</span><span class="hljs-class">.control-label</span><span class="hljs-pseudo">:after</span> <span class="hljs-rules">{
+    <span class="hljs-rule"><span class="hljs-attribute">content</span>:<span class="hljs-value"> <span class="hljs-string">" *"</span></span></span>;
+    <span class="hljs-rule"><span class="hljs-attribute">color</span>:<span class="hljs-value"> red</span></span>;
+}</span>
+</code></pre>
+</blockquote>
+<h2>Creating Lists  <span id="creating-activeform-lists"></span><a href="#creating-activeform-lists" class="hashlink">&para;</a></h2><p>There are 3 types of lists:</p>
+<ul>
+<li>Dropdown lists </li>
+<li>Radio lists</li>
+<li>Checkbox lists</li>
+</ul>
+<p>To create a list, you have to prepare the items. This can be done manually:</p>
+<pre><code class="hljs php language-php"><span class="hljs-variable">$items</span> = [
+    <span class="hljs-number">1</span> =&gt; <span class="hljs-string">'item 1'</span>, 
+    <span class="hljs-number">2</span> =&gt; <span class="hljs-string">'item 2'</span>
+]
+</code></pre>
+<p>or by retrieval from the DB:</p>
+<pre><code class="hljs php language-php"><span class="hljs-variable">$items</span> = Category::find()
+        -&gt;select([<span class="hljs-string">'label'</span>])
+        -&gt;indexBy(<span class="hljs-string">'id'</span>)
+        -&gt;column();
+</code></pre>
+<p>These <code>$items</code> have to be processed by the different list widgets.
+The value of the form field (and the current active item) will be automatically set 
+by the current value of the <code>$model</code>'s attribute. </p>
+<h4>Creating a drop-down list  <span id="creating-activeform-dropdownlist"></span><a href="#creating-activeform-dropdownlist" class="hashlink">&para;</a></h4><p>We can use ActiveField <a href="./yii-widgets-activefield.html#dropDownList()-detail">yii\widgets\ActiveField::dropDownList()</a> method to create a drop-down list:</p>
+<pre><code class="hljs php language-php"><span class="hljs-comment">/* <span class="hljs-doctag">@var</span> $form yii\widgets\ActiveForm */</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$form</span>-&gt;field(<span class="hljs-variable">$model</span>, <span class="hljs-string">'category'</span>)-&gt;dropdownList([
+        <span class="hljs-number">1</span> =&gt; <span class="hljs-string">'item 1'</span>, 
+        <span class="hljs-number">2</span> =&gt; <span class="hljs-string">'item 2'</span>
+    ],
+    [<span class="hljs-string">'prompt'</span>=&gt;<span class="hljs-string">'Select Category'</span>]
+);
+</code></pre>
+<h4>Creating a radio list  <span id="creating-activeform-radioList"></span><a href="#creating-activeform-radioList" class="hashlink">&para;</a></h4><p>We can use ActiveField <a href="./yii-widgets-activefield.html#radioList()-detail">yii\widgets\ActiveField::radioList()</a> method to create a radio list:</p>
+<pre><code class="hljs php language-php"><span class="hljs-comment">/* <span class="hljs-doctag">@var</span> $form yii\widgets\ActiveForm */</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$form</span>-&gt;field(<span class="hljs-variable">$model</span>, <span class="hljs-string">'category'</span>)-&gt;radioList([
+    <span class="hljs-number">1</span> =&gt; <span class="hljs-string">'radio 1'</span>, 
+    <span class="hljs-number">2</span> =&gt; <span class="hljs-string">'radio 2'</span>
+]);
+</code></pre>
+<h4>Creating a checkbox List  <span id="creating-activeform-checkboxList"></span><a href="#creating-activeform-checkboxList" class="hashlink">&para;</a></h4><p>We can use ActiveField <a href="./yii-widgets-activefield.html#checkboxList()-detail">yii\widgets\ActiveField::checkboxList()</a> method to create a checkbox list:</p>
+<pre><code class="hljs php language-php"><span class="hljs-comment">/* <span class="hljs-doctag">@var</span> $form yii\widgets\ActiveForm */</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-variable">$form</span>-&gt;field(<span class="hljs-variable">$model</span>, <span class="hljs-string">'category'</span>)-&gt;checkboxList([
+    <span class="hljs-number">1</span> =&gt; <span class="hljs-string">'checkbox 1'</span>, 
+    <span class="hljs-number">2</span> =&gt; <span class="hljs-string">'checkbox 2'</span>
+]);
+</code></pre>
+<h2>Working with Pjax  <span id="working-with-pjax"></span><a href="#working-with-pjax" class="hashlink">&para;</a></h2><p>The <a href="./yii-widgets-pjax.html">Pjax</a> widget allows you to update a certain section of a
+page instead of reloading the entire page. You can use it to update only the form
+and replace its contents after the submission.</p>
+<p>You can configure <a href="./yii-widgets-pjax.html#$formSelector-detail">$formSelector</a> to specify
+which form submission may trigger pjax. If not set, all forms with <code>data-pjax</code>
+attribute within the enclosed content of Pjax will trigger pjax requests.</p>
+<pre><code class="hljs php language-php"><span class="hljs-keyword">use</span> <span class="hljs-title">yii</span>\<span class="hljs-title">widgets</span>\<span class="hljs-title">Pjax</span>;
+<span class="hljs-keyword">use</span> <span class="hljs-title">yii</span>\<span class="hljs-title">widgets</span>\<span class="hljs-title">ActiveForm</span>;
+
+Pjax::begin([
+    <span class="hljs-comment">// Pjax options</span>
+]);
+    <span class="hljs-variable">$form</span> = ActiveForm::begin([
+        <span class="hljs-string">'options'</span> =&gt; [<span class="hljs-string">'data'</span> =&gt; [<span class="hljs-string">'pjax'</span> =&gt; <span class="hljs-keyword">true</span>]],
+        <span class="hljs-comment">// more ActiveForm options</span>
+    ]);
+
+        <span class="hljs-comment">// ActiveForm content</span>
+
+    ActiveForm::end();
+Pjax::end();
+</code></pre>
+<blockquote class="tip"><p><strong>Tip: </strong>Be careful with the links inside the <a href="./yii-widgets-pjax.html">Pjax</a> widget since
+the response  will also be rendered inside the widget. To prevent this, use the
+<code>data-pjax="0"</code> HTML attribute.</p>
+</blockquote>
+<h4>Values in Submit Buttons and File Upload <span id="values-in-submit-buttons-and-file-upload"></span><a href="#values-in-submit-buttons-and-file-upload" class="hashlink">&para;</a></h4><p>There are known issues using <code>jQuery.serializeArray()</code> when dealing with
+<a href="https://github.com/jquery/jquery/issues/2321">files</a> and
+<a href="https://github.com/jquery/jquery/issues/2321">submit button values</a> which
+won't be solved and are instead deprecated in favor of the <code>FormData</code> class
+introduced in HTML5.</p>
+<p>That means the only official support for files and submit button values with
+ajax or using the <a href="./yii-widgets-pjax.html">Pjax</a> widget depends on the
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/FormData#Browser_compatibility">browser support</a>
+for the <code>FormData</code> class.</p>
+<h2>Further Reading  <span id="further-reading"></span><a href="#further-reading" class="hashlink">&para;</a></h2><p>The next section <a href="guide-input-validation.html">Validating Input</a> handles the validation of the submitted form data on the server-side as well as ajax and client-side validation.</p>
+<p>To read about more complex usage of forms, you may want to check out the following sections:</p>
+<ul>
+<li><a href="guide-input-tabular-input.html">Collecting Tabular Input</a> for collecting data for multiple models of the same kind.</li>
+<li><a href="guide-input-multiple-models.html">Getting Data for Multiple Models</a> for handling multiple different models in the same form.</li>
+<li><a href="guide-input-file-upload.html">Uploading Files</a> on how to use forms for uploading files.</li>
+</ul>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Wed, 10 Apr 2019 23:20:40 +0000</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

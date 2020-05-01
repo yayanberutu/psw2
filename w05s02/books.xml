@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE books [
+<!ELEMENT book (title, author, isbn, price, desc)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT isbn (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ATTLIST price disc CDATA #REQUIRED>
+<!ELEMENT desc (#PCDATA)>
+]>
+<books>
+	<book>
+			<title>Ada gula gak ada semut</title>
+			<author>Wiro Sableng</author>
+			<isbn>0123123001</isbn>
+			<price disc="10.20">11.02</price>
+			<desc>"Ada gula ada semut? Tidak!", "Sapi dapat berlari di atas air" dan banyak keunikan di dunia ini yang dapat anda temukan di buku ini dan Anda akan semakin mengagumi kehidupan.</desc>
+	</book>
+	<book>
+			<title>Bukan pesan biasa</title>
+			<author>Jaka Sembung</author>
+			<isbn>0123123002</isbn>
+			<price disc="5.00">14.28</price>
+			<desc>Telodong Cu Lun, seorang bintang kenamaan yang digandrungi remaja alay saat ini menemukan sebuah gambar berbentuk bulat di dinding kamarnya. Keanehan lain yang ia temukan adalah kosongnya tudung saji di ruang makan dan kosongnya dompet. Suasana makin mencekam ketika sebuah pesan singkat diterimanya melalui telepon gengamnya, isi pesan itu tidak biasa... temukan kisahnya!</desc>
+	</book>
+	<book>
+			<title>Celana di jemuran ASPA, merah berbunga</title>
+			<author>Saras 008</author>
+			<isbn>0123123003</isbn>
+			<price disc="20.00">7.85</price>
+			<desc>Pada saat liburan semester yang lalu, seorang penanggungjawab bidang akademik berjalan di daerah jemuran Asrama Putra yang tengah ditinggal para penghuninya berlibur, namun karena beberapa hal ada beberapa mahasiswa yang masih tinggal di gedung megah itu. Terlihat sebuah celana merah dengan corak bunga bangkai, terjatuh dari jemuran pakaian, alamak! Investigasi dilakukan, dan hal tidak disangka pun terkuak.</desc>
+	</book>
+	<book>
+			<title>Di mana ada PHP, aman!</title>
+			<author>Arman Maulagi</author>
+			<isbn>0123123004</isbn>
+			<price disc="5.00">18.99</price>
+			<desc>Pengembang web sering kesulitan dalam memanajemen situs statis yang mereka kembangkan. Mereka harus mengubah kode yang sudah mereka tulis setiap kali ada perubahan konten. PHP sebagai salah satu server-side programming language dapat mengeliminir persoalan tersebut. Buku ini menjelaskan bagaimana caranya.</desc>
+	</book>
+	<book>
+			<title>Tiki-taka pemrograman</title>
+			<author>Pandapotan Bangsa</author>
+			<isbn>0123123005</isbn>
+			<price disc="10.00">10.5</price>
+			<desc>Tidak mudah memahami konsep pemrograman. Buku ini memberikan tutorial dengan cara pandang berbeda untuk memahami konsep-konsep tersebut. Dilangkapi dengan contoh kasus yang mudah dipahami dan penyelesaian yang sistematis dan tepat sasaran.</desc>
+	</book>
+</books>

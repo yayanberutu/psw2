@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="language" content="en" />
+        <link href="./assets/963b888/css/bootstrap.css" rel="stylesheet">
+<link href="./assets/e1ef68af/solarized_light.css" rel="stylesheet">
+<link href="./assets/407eef69/style.css" rel="stylesheet">
+<script src="./assets/5b23384c/jquery.js"></script>
+<script src="./assets/963b888/js/bootstrap.js"></script>
+<script src="./assets/538e96fb/jssearch.js"></script>    <title>Testing Overview - Testing - The Definitive Guide to Yii 2.0</title>
+</head>
+<body>
+
+<div class="wrap">
+    <nav id="w1403" class="navbar-inverse navbar-fixed-top navbar"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w1403-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="./index.html">The Definitive Guide to Yii 2.0</a></div><div id="w1403-collapse" class="collapse navbar-collapse"><ul id="w1404" class="navbar-nav nav"><li><a href="./index.html">Class reference</a></li>
+<li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Extensions <span class="caret"></span></a><ul id="w1405" class="dropdown-menu"><li><a href="./ext-apidoc-index.html" tabindex="-1">apidoc</a></li>
+<li><a href="./ext-authclient-index.html" tabindex="-1">authclient</a></li>
+<li><a href="./ext-bootstrap-index.html" tabindex="-1">bootstrap</a></li>
+<li><a href="./ext-debug-index.html" tabindex="-1">debug</a></li>
+<li><a href="./ext-elasticsearch-index.html" tabindex="-1">elasticsearch</a></li>
+<li><a href="./ext-faker-index.html" tabindex="-1">faker</a></li>
+<li><a href="./ext-gii-index.html" tabindex="-1">gii</a></li>
+<li><a href="./ext-httpclient-index.html" tabindex="-1">httpclient</a></li>
+<li><a href="./ext-imagine-index.html" tabindex="-1">imagine</a></li>
+<li><a href="./ext-jui-index.html" tabindex="-1">jui</a></li>
+<li><a href="./ext-mongodb-index.html" tabindex="-1">mongodb</a></li>
+<li><a href="./ext-redis-index.html" tabindex="-1">redis</a></li>
+<li><a href="./ext-shell-index.html" tabindex="-1">shell</a></li>
+<li><a href="./ext-smarty-index.html" tabindex="-1">smarty</a></li>
+<li><a href="./ext-sphinx-index.html" tabindex="-1">sphinx</a></li>
+<li><a href="./ext-swiftmailer-index.html" tabindex="-1">swiftmailer</a></li>
+<li><a href="./ext-twig-index.html" tabindex="-1">twig</a></li></ul></li>
+<li><a href="./guide-README.html">Guide</a></li></ul><div class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <input id="searchbox" type="text" class="form-control" placeholder="Search">
+  </div>
+</div>
+</div></nav>
+    <div id="search-resultbox" style="display: none;" class="modal-content">
+        <ul id="search-results">
+        </ul>
+    </div>
+
+    
+<div class="row">
+    <div class="col-md-2">
+                <div id="navigation" class="list-group"><a class="list-group-item" href="#navigation-1387" data-toggle="collapse" data-parent="#navigation">Introduction <b class="caret"></b></a><div id="navigation-1387" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-intro-yii.html">About Yii</a>
+<a class="list-group-item" href="./guide-intro-upgrade-from-v1.html">Upgrading from Version 1.1</a></div>
+<a class="list-group-item" href="#navigation-1388" data-toggle="collapse" data-parent="#navigation">Getting Started <b class="caret"></b></a><div id="navigation-1388" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-start-prerequisites.html">What do you need to know</a>
+<a class="list-group-item" href="./guide-start-installation.html">Installing Yii</a>
+<a class="list-group-item" href="./guide-start-workflow.html">Running Applications</a>
+<a class="list-group-item" href="./guide-start-hello.html">Saying Hello</a>
+<a class="list-group-item" href="./guide-start-forms.html">Working with Forms</a>
+<a class="list-group-item" href="./guide-start-databases.html">Working with Databases</a>
+<a class="list-group-item" href="./guide-start-gii.html">Generating Code with Gii</a>
+<a class="list-group-item" href="./guide-start-looking-ahead.html">Looking Ahead</a></div>
+<a class="list-group-item" href="#navigation-1389" data-toggle="collapse" data-parent="#navigation">Application Structure <b class="caret"></b></a><div id="navigation-1389" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-structure-overview.html">Application Structure Overview</a>
+<a class="list-group-item" href="./guide-structure-entry-scripts.html">Entry Scripts</a>
+<a class="list-group-item" href="./guide-structure-applications.html">Applications</a>
+<a class="list-group-item" href="./guide-structure-application-components.html">Application Components</a>
+<a class="list-group-item" href="./guide-structure-controllers.html">Controllers</a>
+<a class="list-group-item" href="./guide-structure-models.html">Models</a>
+<a class="list-group-item" href="./guide-structure-views.html">Views</a>
+<a class="list-group-item" href="./guide-structure-modules.html">Modules</a>
+<a class="list-group-item" href="./guide-structure-filters.html">Filters</a>
+<a class="list-group-item" href="./guide-structure-widgets.html">Widgets</a>
+<a class="list-group-item" href="./guide-structure-assets.html">Assets</a>
+<a class="list-group-item" href="./guide-structure-extensions.html">Extensions</a></div>
+<a class="list-group-item" href="#navigation-1390" data-toggle="collapse" data-parent="#navigation">Handling Requests <b class="caret"></b></a><div id="navigation-1390" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-runtime-overview.html">Request Handling Overview</a>
+<a class="list-group-item" href="./guide-runtime-bootstrapping.html">Bootstrapping</a>
+<a class="list-group-item" href="./guide-runtime-routing.html">Routing and URL Creation</a>
+<a class="list-group-item" href="./guide-runtime-requests.html">Requests</a>
+<a class="list-group-item" href="./guide-runtime-responses.html">Responses</a>
+<a class="list-group-item" href="./guide-runtime-sessions-cookies.html">Sessions and Cookies</a>
+<a class="list-group-item" href="./guide-runtime-handling-errors.html">Handling Errors</a>
+<a class="list-group-item" href="./guide-runtime-logging.html">Logging</a></div>
+<a class="list-group-item" href="#navigation-1391" data-toggle="collapse" data-parent="#navigation">Key Concepts <b class="caret"></b></a><div id="navigation-1391" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-concept-components.html">Components</a>
+<a class="list-group-item" href="./guide-concept-properties.html">Properties</a>
+<a class="list-group-item" href="./guide-concept-events.html">Events</a>
+<a class="list-group-item" href="./guide-concept-behaviors.html">Behaviors</a>
+<a class="list-group-item" href="./guide-concept-configurations.html">Configurations</a>
+<a class="list-group-item" href="./guide-concept-aliases.html">Aliases</a>
+<a class="list-group-item" href="./guide-concept-autoloading.html">Class Autoloading</a>
+<a class="list-group-item" href="./guide-concept-service-locator.html">Service Locator</a>
+<a class="list-group-item" href="./guide-concept-di-container.html">Dependency Injection Container</a></div>
+<a class="list-group-item" href="#navigation-1392" data-toggle="collapse" data-parent="#navigation">Working with Databases <b class="caret"></b></a><div id="navigation-1392" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-db-dao.html">Database Access Objects</a>
+<a class="list-group-item" href="./guide-db-query-builder.html">Query Builder</a>
+<a class="list-group-item" href="./guide-db-active-record.html">Active Record</a>
+<a class="list-group-item" href="./guide-db-migrations.html">Migrations</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-sphinx/doc/guide">Sphinx</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-redis/doc/guide">Redis</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-mongodb/doc/guide">MongoDB</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-elasticsearch/doc/guide">ElasticSearch</a></div>
+<a class="list-group-item" href="#navigation-1393" data-toggle="collapse" data-parent="#navigation">Getting Data from Users <b class="caret"></b></a><div id="navigation-1393" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-input-forms.html">Creating Forms</a>
+<a class="list-group-item" href="./guide-input-validation.html">Validating Input</a>
+<a class="list-group-item" href="./guide-input-file-upload.html">Uploading Files</a>
+<a class="list-group-item" href="./guide-input-tabular-input.html">Collecting Tabular Input</a>
+<a class="list-group-item" href="./guide-input-multiple-models.html">Getting Data for Multiple Models</a>
+<a class="list-group-item" href="./guide-input-form-javascript.html">Extending ActiveForm on the Client Side</a></div>
+<a class="list-group-item" href="#navigation-1394" data-toggle="collapse" data-parent="#navigation">Displaying Data <b class="caret"></b></a><div id="navigation-1394" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-output-formatting.html">Data Formatting</a>
+<a class="list-group-item" href="./guide-output-pagination.html">Pagination</a>
+<a class="list-group-item" href="./guide-output-sorting.html">Sorting</a>
+<a class="list-group-item" href="./guide-output-data-providers.html">Data Providers</a>
+<a class="list-group-item" href="./guide-output-data-widgets.html">Data Widgets</a>
+<a class="list-group-item" href="./guide-output-client-scripts.html">Working with Client Scripts</a>
+<a class="list-group-item" href="./guide-output-theming.html">Theming</a></div>
+<a class="list-group-item" href="#navigation-1395" data-toggle="collapse" data-parent="#navigation">Security <b class="caret"></b></a><div id="navigation-1395" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-security-overview.html">Security Overview</a>
+<a class="list-group-item" href="./guide-security-authentication.html">Authentication</a>
+<a class="list-group-item" href="./guide-security-authorization.html">Authorization</a>
+<a class="list-group-item" href="./guide-security-passwords.html">Working with Passwords</a>
+<a class="list-group-item" href="./guide-security-cryptography.html">Cryptography</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-authclient/doc/guide">Auth Clients</a>
+<a class="list-group-item" href="./guide-security-best-practices.html">Best Practices</a></div>
+<a class="list-group-item" href="#navigation-1396" data-toggle="collapse" data-parent="#navigation">Caching <b class="caret"></b></a><div id="navigation-1396" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-caching-overview.html">Caching Overview</a>
+<a class="list-group-item" href="./guide-caching-data.html">Data Caching</a>
+<a class="list-group-item" href="./guide-caching-fragment.html">Fragment Caching</a>
+<a class="list-group-item" href="./guide-caching-page.html">Page Caching</a>
+<a class="list-group-item" href="./guide-caching-http.html">HTTP Caching</a></div>
+<a class="list-group-item" href="#navigation-1397" data-toggle="collapse" data-parent="#navigation">RESTful Web Services <b class="caret"></b></a><div id="navigation-1397" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-rest-quick-start.html">Quick Start</a>
+<a class="list-group-item" href="./guide-rest-resources.html">Resources</a>
+<a class="list-group-item" href="./guide-rest-controllers.html">Controllers</a>
+<a class="list-group-item" href="./guide-rest-routing.html">Routing</a>
+<a class="list-group-item" href="./guide-rest-response-formatting.html">Response Formatting</a>
+<a class="list-group-item" href="./guide-rest-authentication.html">Authentication</a>
+<a class="list-group-item" href="./guide-rest-rate-limiting.html">Rate Limiting</a>
+<a class="list-group-item" href="./guide-rest-versioning.html">Versioning</a>
+<a class="list-group-item" href="./guide-rest-error-handling.html">Error Handling</a></div>
+<a class="list-group-item" href="#navigation-1398" data-toggle="collapse" data-parent="#navigation">Development Tools <b class="caret"></b></a><div id="navigation-1398" class="submenu panel-collapse collapse"><a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-debug/doc/guide">Debug Toolbar and Debugger</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-gii/doc/guide">Generating Code using Gii</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-apidoc">Generating API Documentation</a></div>
+<a class="list-group-item active" href="#navigation-1399" data-toggle="collapse" data-parent="#navigation">Testing <b class="caret"></b></a><div id="navigation-1399" class="submenu panel-collapse collapse in"><a class="list-group-item active" href="./guide-test-overview.html">Testing Overview</a>
+<a class="list-group-item" href="./guide-test-environment-setup.html">Testing environment setup</a>
+<a class="list-group-item" href="./guide-test-unit.html">Unit Tests</a>
+<a class="list-group-item" href="./guide-test-functional.html">Functional Tests</a>
+<a class="list-group-item" href="./guide-test-acceptance.html">Acceptance Tests</a>
+<a class="list-group-item" href="./guide-test-fixtures.html">Fixtures</a></div>
+<a class="list-group-item" href="#navigation-1400" data-toggle="collapse" data-parent="#navigation">Special Topics <b class="caret"></b></a><div id="navigation-1400" class="submenu panel-collapse collapse"><a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-app-advanced/doc/guide">Advanced Project Template</a>
+<a class="list-group-item" href="./guide-tutorial-start-from-scratch.html">Building Application from Scratch</a>
+<a class="list-group-item" href="./guide-tutorial-console.html">Console Commands</a>
+<a class="list-group-item" href="./guide-tutorial-core-validators.html">Core Validators</a>
+<a class="list-group-item" href="./guide-tutorial-docker.html">Docker</a>
+<a class="list-group-item" href="./guide-tutorial-i18n.html">Internationalization</a>
+<a class="list-group-item" href="./guide-tutorial-mailing.html">Mailing</a>
+<a class="list-group-item" href="./guide-tutorial-performance-tuning.html">Performance Tuning</a>
+<a class="list-group-item" href="./guide-tutorial-shared-hosting.html">Shared Hosting Environment</a>
+<a class="list-group-item" href="./guide-tutorial-template-engines.html">Template Engines</a>
+<a class="list-group-item" href="./guide-tutorial-yii-integration.html">Working with Third-Party Code</a>
+<a class="list-group-item" href="./guide-tutorial-yii-as-micro-framework.html">Using Yii as a micro framework</a></div>
+<a class="list-group-item" href="#navigation-1401" data-toggle="collapse" data-parent="#navigation">Widgets <b class="caret"></b></a><div id="navigation-1401" class="submenu panel-collapse collapse"><a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-grid-gridview.html">GridView</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-listview.html">ListView</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-detailview.html">DetailView</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/guide-input-forms.html#activerecord-based-forms-activeform">ActiveForm</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-pjax.html">Pjax</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-menu.html">Menu</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-linkpager.html">LinkPager</a>
+<a class="list-group-item" href="https://www.yiiframework.com/doc-2.0/yii-widgets-linksorter.html">LinkSorter</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-bootstrap/doc/guide">Bootstrap Widgets</a>
+<a class="list-group-item" href="https://www.yiiframework.com/extension/yiisoft/yii2-jui/doc/guide">jQuery UI Widgets</a></div>
+<a class="list-group-item" href="#navigation-1402" data-toggle="collapse" data-parent="#navigation">Helpers <b class="caret"></b></a><div id="navigation-1402" class="submenu panel-collapse collapse"><a class="list-group-item" href="./guide-helper-overview.html">Helpers Overview</a>
+<a class="list-group-item" href="./guide-helper-array.html">ArrayHelper</a>
+<a class="list-group-item" href="./guide-helper-html.html">Html</a>
+<a class="list-group-item" href="./guide-helper-url.html">Url</a></div></div>    </div>
+    <div class="col-md-9 guide-content" role="main">
+        <h1>Testing <span id="testing"></span><a href="#testing" class="hashlink">&para;</a></h1>
+<div class="toc"><ol><li><a href="#developing-with-tests">Developing with tests</a></li>
+<li><a href="#when-and-how-to-test">When and how to test</a></li>
+<li><a href="#further-reading">Further reading</a></li></ol></div>
+<p>Testing is an important part of software development. Whether we are aware of it or not, we conduct testing continuously.
+For example, when we write a class in PHP, we may debug it step by step or simply use <code>echo</code> or <code>die</code> statements to verify
+the implementation works according to our initial plan. In the case of a web application, we're entering some test data
+in forms to ensure the page interacts with us as expected.</p>
+<p>The testing process could be automated so that each time when we need to verify something, we just need to call up
+the code that does it for us. The code that verifies the result matches what we've planned is called <em>test</em> and
+the process of its creation and further execution is known as <em>automated testing</em>, which is the main topic of these
+testing chapters.</p>
+<h2>Developing with tests <span id="developing-with-tests"></span><a href="#developing-with-tests" class="hashlink">&para;</a></h2><p>Test-Driven Development (TDD) and Behavior-Driven Development (BDD) are approaches of developing
+software by describing behavior of a piece of code or the whole feature as a set of scenarios or tests before
+writing actual code and only then creating the implementation that allows these tests to pass verifying that intended
+behavior is achieved.</p>
+<p>The process of developing a feature is the following:</p>
+<ul>
+<li>Create a new test that describes a feature to be implemented.</li>
+<li>Run the new test and make sure it fails. It is expected since there's no implementation yet.</li>
+<li>Write simple code to make the new test pass.</li>
+<li>Run all tests and make sure they all pass.</li>
+<li>Improve code and make sure tests are still OK.</li>
+</ul>
+<p>After it's done the process is repeated again for another feature or improvement. If the existing feature is to be changed,
+tests should be changed as well.</p>
+<blockquote class="tip"><p><strong>Tip: </strong>If you feel that you are losing time doing a lot of small and simple iterations, try covering more by your
+test scenario so you do more before executing tests again. If you're debugging too much, try doing the opposite.</p>
+</blockquote>
+<p>The reason to create tests before doing any implementation is that it allows us to focus on what we want to achieve
+and fully dive into "how to do it" afterwards. Usually it leads to better abstractions and easier test maintenance when
+it comes to feature adjustments or less coupled components.</p>
+<p>So to sum up the advantages of such approach are the following:</p>
+<ul>
+<li>Keeps you focused on one thing at a time which results in improved planning and implementation.</li>
+<li>Results in test-covering more features in greater detail i.e. if tests are OK most likely nothing's broken.</li>
+</ul>
+<p>In the long term it usually gives you a good time-saving effect.</p>
+<h2>When and how to test <span id="when-and-how-to-test"></span><a href="#when-and-how-to-test" class="hashlink">&para;</a></h2><p>While the test first approach described above makes sense for long term and relatively complex projects it could be overkill
+for simpler ones. There are some indicators of when it's appropriate:</p>
+<ul>
+<li>Project is already large and complex.</li>
+<li>Project requirements are starting to get complex. Project grows constantly.</li>
+<li>Project is meant to be long term.</li>
+<li>The cost of the failure is too high.</li>
+</ul>
+<p>There's nothing wrong in creating tests covering behavior of existing implementation.</p>
+<ul>
+<li>Project is a legacy one to be gradually renewed.</li>
+<li>You've got a project to work on and it has no tests.</li>
+</ul>
+<p>In some cases any form of automated testing could be overkill:</p>
+<ul>
+<li>Project is simple and isn't getting anymore complex.</li>
+<li>It's a one-time project that will no longer be worked on.</li>
+</ul>
+<p>Still if you have time it's good to automate testing in these cases as well.</p>
+<h2>Further reading <span id="further-reading"></span><a href="#further-reading" class="hashlink">&para;</a></h2><ul>
+<li>Test Driven Development: By Example / Kent Beck. ISBN: 0321146530.</li>
+</ul>
+        <div class="toplink"><a href="#" class="h1" title="go to top"><span class="glyphicon glyphicon-arrow-up"></a></div>
+    </div>
+</div>
+
+
+</div>
+
+<footer class="footer">
+        <p class="pull-right"><small>Page generated on Wed, 10 Apr 2019 23:20:40 +0000</small></p>
+    Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></footer>
+
+<script>jQuery(function ($) {
+    var shiftWindow = function () { scrollBy(0, -50) };
+    if (location.hash) setTimeout(shiftWindow, 1);
+    window.addEventListener("hashchange", shiftWindow);
+var element = document.createElement("script");
+element.src = "./jssearch.index.js";
+document.body.appendChild(element);
+
+var searchBox = $('#searchbox');
+
+// search when typing in search field
+searchBox.on("keyup", function(event) {
+    var query = $(this).val();
+
+    if (query == '' || event.which == 27) {
+        $('#search-resultbox').hide();
+        return;
+    } else if (event.which == 13) {
+        var selectedLink = $('#search-resultbox a.selected');
+        if (selectedLink.length != 0) {
+            document.location = selectedLink.attr('href');
+            return;
+        }
+    } else if (event.which == 38 || event.which == 40) {
+        $('#search-resultbox').show();
+
+        var selected = $('#search-resultbox a.selected');
+        if (selected.length == 0) {
+            $('#search-results').find('a').first().addClass('selected');
+        } else {
+            var next;
+            if (event.which == 40) {
+                next = selected.parent().next().find('a').first();
+            } else {
+                next = selected.parent().prev().find('a').first();
+            }
+            if (next.length != 0) {
+                var resultbox = $('#search-results');
+                var position = next.position();
+
+//              TODO scrolling is buggy and jumps around
+//                resultbox.scrollTop(Math.floor(position.top));
+//                console.log(position.top);
+
+                selected.removeClass('selected');
+                next.addClass('selected');
+            }
+        }
+
+        return;
+    }
+    $('#search-resultbox').show();
+    $('#search-results').html('<li><span class="no-results">No results</span></li>');
+
+    var result = jssearch.search(query);
+
+    if (result.length > 0) {
+        var i = 0;
+        var resHtml = '';
+
+        for (var key in result) {
+            if (i++ > 20) {
+                break;
+            }
+            resHtml = resHtml +
+            '<li><a href="' + result[key].file.u.substr(3) +'"><span class="title">' + result[key].file.t + '</span>' +
+            '<span class="description">' + result[key].file.d + '</span></a></li>';
+        }
+        $('#search-results').html(resHtml);
+    }
+});
+
+// hide the search results on ESC
+$(document).on("keyup", function(event) { if (event.which == 27) { $('#search-resultbox').hide(); } });
+// hide search results on click to document
+$(document).bind('click', function (e) { $('#search-resultbox').hide(); });
+// except the following:
+searchBox.bind('click', function(e) { e.stopPropagation(); });
+$('#search-resultbox').bind('click', function(e) { e.stopPropagation(); });
+
+});</script></body>
+</html>

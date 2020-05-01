@@ -1,0 +1,137 @@
+NIM#Nama#Kelas
+11113001#Maria Magdalena Panjaitan#32TI1
+11113002#Margaret Teacher Banjarnahor#32TI2
+11113003#Daniel Panjaitan#32TK
+11113005#Veronica G. R. Napitupulu#32TK
+11113007#Tommi Pernandes Munte#32TK
+11113008#Frengki Simatupang#32TK
+11113009#Nico July Habonaran Saragih#32TI1
+11113010#Sembiring Ivandra Oktovan#32TI2
+11113011#Martinus Iron Sijabat#32TI1
+11113012#Erisha Gustanti Sitorus#32TI1
+11113013#Liza Venita Debora Pardede#32TI1
+11113014#Pance Satria Naibaho#32TI2
+11113015#Enjelyna Pardede#32TI2
+11113016#Debby Melfina Butarbutar#32TI2
+11113017#Indri Goldwinda Situmorang#32TI1
+11113018#Sintong Panjaitan#32TI1
+11113020#Rony David Ferdinand S.#32TK
+11113021#Clara Mathilda Stephanie#32TI2
+11113022#Anita Antonia Ginting#32TI1
+11113023#Witri Zakia Manurung#32TK
+11113025#Gustina Malinda#32TI1
+11113028#Naomi Olga Panjaitan#32TK
+11113030#Oscar Daniel Hutajulu#32TI1
+11113032#Ester Marta Tambunan#32TI2
+11113033#Elwin Jusuf Togatorop#32TK
+11113035#Kevin Rozaldo Christo#32TI1
+11113038#Martalina Tabita Sitorus#32TI2
+11113039#Yuni Evalin Sibarani#32TI2
+11113040#Desy Christy De Vega Munte#32TI2
+11113043#Anita Carolina Aritonang#32TI1
+11113045#Uci Arahito Lubis#32TI1
+11113047#Sanny Chiudra Simarmata#32TI2
+11113050#Christin Seventina Situmorang #32TI2
+11113051#Masita Sesilia Pasaribu#32TI1
+11113052#Dominika J. Siahaan #32TI1
+11113053#Alex Fransiscus Manihuruk#32TK
+11113054#Natalia Desfri Hutabarat#32TI1
+11113055#Ruth Tabita Hutahaean#32TK
+11113056#Anindya Romauli Manalu#32TK
+11113057#Tamy Julyanty Sihotang#32TK
+11113058#Nobel Lina Sidabutar #32TK
+11113059#Mariana Sisilia Tambunan#32TI1
+11113060#Valentino Sihombing#32TK
+11113061#Veni Vici Raya N.#32TI2
+11113062#Doan Pratama Sinaga#32TK
+11113063#Aprelia Maisara Tarihoran#32TI1
+11113064#Iman Syahputra Situmorang#32TI2
+11113065#Idola Sari Manurung#32TI2
+11113066#Tania Sulastri Munthe#32TI1
+11113067#Monika Theresia Siahaan#32TI2
+11113068#Novanti Lumban Tobing#32TI2
+11113069#Putri Elisabeth Sibuea#32TI1
+11113070#Dewika Silitonga#32TI1
+11113071#Josefh Hasudungan Simanjuntak#32TK
+11113072#Bima Pandapotan Sinaga#32TK
+11113075#Candra Butarbutar#32TI1
+11113076#Kristina Bakara #32TK
+11113077#Ester Situmorang#32TK
+11113078#Lusi Indah#32TI2
+11113079#Inten Sherley Panjaitan#32TI1
+11113080#Hesty Thamara Marbun#32TI2
+11113081#David Elkana Sitompul#32TI1
+11113082#Ulina T. Simanjuntak#32TI1
+11113083#Eminarti Yuliasi Sianturi#32TI1
+11113084#Retno Tambunan #32TK
+11113085#Raymond Sitepu#32TK
+11113086#Ida Christy Hutagaol#32TI1
+11113088#Agung Nadapdap#32TK
+11113089#Ritcan Maruli Pandapotan Hutahaean#32TI2
+11113090#Novita Sijabat#32TI2
+11113092#Ruth Nolytha Putri Sarti Pangaribuan#32TI2
+11113093#Hosea Paskahadi Riquel Simanjuntak#32TI2
+11113094#Daniel Boy Marpaung#32TI1
+11113095#Imelda Yohana Uli Rastra Lingga#32TI2
+11113096#Dimas Daniel Jordan Simanjuntak#32TK
+11113097#Septian Putra Siahaan#32TK
+11113099#Andre Fernando Partogi Sianipar#32TI2
+11113100#Kevin Godrikus Archibald Tagading Pardosi#32TK
+11113102#Debora Apriani Panggabean#32TI1
+11113103#Roky Sarasi Manalu#32TI2
+11113104#Charlie Perdana Surya Siagian#32TI2
+11113105#Pardin Siregar#32TI2
+11113106#Nova Floren Panjaitan#32TK
+11113107#Ruben F C Panjaitan#32TI1
+11113108#Winda Dumaria Simanjuntak#32TI2
+11113109#Julia A. Butarbutar#32TI2
+21113001#Silvia Bernadetta Sinaga#42B
+21113004#Nita Yolanda Lumbantobing#42B
+21113005#Joyce Rotua Natalia Manurung#42A
+21113006#Adi Wibowo P.#42B
+21113007#Harris V. Sibuea#42A
+21113009#Ariestoni S. Silalahi#42B
+21113011#Sinta Ida Patona Sianipar#42A
+21113013#Lestarina Tampubolon#42B
+21113016#Ephraim Kesaba Silalahi#42A
+21113017#Samuel Stefanus Napitupulu#42A
+21113019#Yohanes Marthin Hutabarat#42B
+21113022#Yohana Adelina Pasaribu#42A
+21113024#Tia Elyani #42B
+21113025#Roberto Tambunan#42B
+21113029#Apriyanti Br. Sitorus#42A
+21113030#Samuel Christian Silalahi#42A
+21113033#Yuli Arantxa Vicario Sinulingga #42A
+21113034#Eflianto Butarbutar#42A
+21113036#Erjan Sarwono Sirait #42A
+21113037#Ester Melati Manalu#42B
+21113039#Yona Yunisefin Esdaria Lubis#42A
+21113040#Putra Setiawan Simaremare #42B
+21113042#Veronika H. Purba#42A
+21113044#Richa Marchelina Purba#42A
+21113046#Dumaria Sartika Putri Sitinjak#42B
+21113047#Dony Alfonso Sinaga#42B
+21113049#Mariani Febirianti #42B
+21113052#Rotua Pasaribu#42B
+21113054#Gustav Manuel Dasma Sihombing#42B
+21113055#Paul Marten Simanjuntak#42B
+21113059#Fanny Tambunan#42A
+21113060#Trima Wahyuni Manurung#42B
+21113061#Carolina Sitorus#42B
+21113062#Handayani T.N.S#42A
+21113063#Lydia Natalia Panjaitan#42A
+21113064#Romasi Sunrise Silaban#42B
+21113065#Gomgom#42B
+21113066#Ricoh Richardo Nababan#42B
+21113067#Olivia Tampubolon#42A
+21113068#Valentina Siregar#42A
+21113069#Inggrid Sylvia Simanjuntak#42B
+21113070#Agny J. M. Pardosi#42A
+21113071#Albert Kurniawan Waruwu#42A
+21113072#Agustinus M. Tua Sijabat#42A
+21113073#Marthin Satrya Pasaribu#42A
+21113075#Mindo Parsaulian Sormin#42A
+21113076#Jen Presley Samosir#42A
+21113077#Yohana Gultom#42B
+21113078#Brams Pande Gorga Tua Silitonga#42B
+21113079#Andreas Hamonangan Sibuea#42B

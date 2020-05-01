@@ -1,0 +1,29 @@
+.header{
+	background:#555; 
+	/*padding:20px;*/
+	color: #ccc;
+}
+.header a.judul {
+	font-size:200%; 
+	color:#fff;
+}
+.content{
+	background:#4879EA; 
+	min-height:720px;
+	
+	}
+.footer{
+	background:#333; 
+	padding:10px; 
+	color:#ccc;
+}
+.menubar {
+	background:#C2514E ;
+}
+.tab {
+	background-color: #FFF044;
+	min-width: 200px;
+}
+.row {
+	min-height:720px;
+}

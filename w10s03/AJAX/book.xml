@@ -1,0 +1,12 @@
+<SIKAD> 
+<!-- table BUKU --> 
+    <BUKU> 
+        <ID_BUKU>10000081</ID_BUKU> 
+        <JUDUL>Cara Mudah belajar Ajax dan JSON</JUDUL> 
+        <PENGARANG>Batara dkk</PENGARANG> 
+        <ISBN>9795523406</ISBN> 
+        <PENERBIT>Rasibook</PENERBIT> 
+        <JUMLAH>1</JUMLAH> 
+        <SUBJEK>005.133 Tos c</SUBJEK> 
+    </BUKU> 
+</SIKAD>

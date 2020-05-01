@@ -1,0 +1,1 @@
+"Cara kerja ajax adalah sebuah proses memastikan aksi tidak perlu mereload Semua bagian halaman. Selamat Mempelajari AJAX"

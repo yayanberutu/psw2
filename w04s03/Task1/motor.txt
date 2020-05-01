@@ -1,0 +1,9 @@
+NamaMotor,HargaDasar,Diskon
+"Honda Supra X 125 CW",16600000,1%
+"Honda Supra X 125 Helm In",16900000,5%
+"Honda Supra X 125 SW",15520000,6%
+"Honda New Blade R",13200000,6%
+"Honda Absolute Revo Fit",12695000,3%
+"Honda New Blade Repsol",16550000,12%
+"Honda Absolute Revo CW",14020000,5%
+"Honda Absolute Revo SW",13245000,6%
